@@ -11,9 +11,19 @@ function toggle() {
 
 }
 
+let lenght = window.innerWidth;
+console.log(lenght)
+
 function sidebarnone() {
     const sidebar = document.getElementById("leftside")
-    sidebar.style.display = "none"
+
+
+    if (window.innerWidth < 780) {
+        sidebar.style.display = "none"
+    } else {
+        sidebar.style.display = "block"
+    }
+
 }
 
 
